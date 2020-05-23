@@ -1,0 +1,278 @@
+\input{preamble}
+\title{ Monografía de Física: \\ Estudio de la forma de salpicaduras formadas
+por gotas de agua en función de la altitud y el ángulo de impacto en una
+superficie} \author{ Aleix Boné \\ \\ Tutor: Jordi Mazón } \date{\today}
+
+\setcounter{page}{-1}
+
+\includeonly{tables}
+
+\begin{document} \topskip3cm \clearpage\maketitle \thispagestyle{empty}
+\vspace{1cm}
+    %\footnotetext{Source:
+%\url{https://commons.wikimedia.org/wiki/File\%3ADCT-8x8.png} By Devcore (Own
+%work) [Public domain], via Wikimedia Commons} \begin{center}
+%\begin{figure}[ht] \caption{} \centerline{
+                %%\includegraphics[width=0.65\textwidth]{src/DCT-8x8.png}
+            %} \end{figure} \end{center}
+
+    \pagebreak \thispagestyle{empty} \topskip0pt 
+    \tableofcontents \pagebreak \listoffigures \pagebreak \listoftables \pagebreak
+    \section{Resumen} \label{sec:resumen}
+
+\section{Introducción teórica} \label{sec:introduccion_teorica}
+%Una gota de líquido al caer desde cierta altura e impactar con un sólido sufre
+%un cambio de momento que provoca una deformación de la gota. Esta deformación
+%es
+
+\section{Diseño experimental 1} \label{sec:Diseño experimental 1}
+\subsection{Objetivo} \label{sub:objetivo} 
+El objetivo de este experimento es
+determinar la relación entre la altura de caída de una gota de agua y la mancha
+que esta genera después de impactar contra una superficie plana.
+
+\subsection{Montaje} \label{sub:montaje} El montaje del experimento consistía
+en una lámina de papel de formato DinA4, de densidad $100g/cm^2$ y grosor de
+$0.010\ mm$ usada como superficie de impacto y un nivel al que se le añadió una
+cinta con medidas asó como un soporte que sujetaba una pipeta Pasteur y que
+permitía soltar las gotas con la pipeta Pasteur desde diferentes alturas sobre
+la lámina de papel.  Se uso una lámina de papel para cada una de las diferentes
+alturas que iban de $10\ cm$ a $100\ cm$ en un incremento de $10\ cm$. Para
+recolectar los datos se usó una cámara con la que se fotografiaron las
+distintas láminas de papel, las imágenes se tomaron con los mismos valores de
+zoom, apertura, velocidad, enfoque e ISO para facilitar el posterior
+procesamiento de las imágenes. La cámara se colocó con un trípode apuntando
+perpendicularmente a las láminas para eliminar la perspectiva. Cada foto
+realizada tenia como referencia una regla al lado de la lámina para determinar
+las dimensiones de las manchas en el momento de procesarlas. La figura
+\ref{fig:montaje} muestra el montaje experimental.  Se uso agua destilada
+mezclada con colorante amarillo para poder procesar las imágenes obtenidas.
+
+\begin{figure}[htpb] \centering
+\includegraphics[width=0.8\linewidth,angle=90]{src/montaje.jpg}
+\caption{Montaje experimental} \label{fig:montaje} \end{figure}
+
+\subsection{Control de variables} \label{sub:control_de_variables} En este
+experimento, la variable independiente es la altura de la que cae la gota de
+agua y las variables dependientes son el área de la mancha formada, el
+perímetro y el radio que se medirán con un programa informático a partir de las
+imágenes capturadas. Para garantizar el mínimo error, se deben controlar las
+variables que pueden afectar a las anteriores.  Uno de los puntos más
+importantes es las propiedades del líquido en cuestión, puesto que al ser
+lanzado con una pipeta Pasteur, el volumen de líquido depende de la tensión
+superficial del líquido como muestra la ecuación \ref{eq:pendant_drop} que se
+obtiene igualando la fuerza de la gravedad con la fuerza debido a la tensión
+superficial de una gota de masa $m$ y tensión superficial $\gamma$ en un tubo
+de diámetro $d$ \cite{pendant_drop}.  \begin{align}\label{eq:pendant_drop}
+    F_\gamma&=\pi d \gamma \qquad F_\gamma = F_g = mg \nonumber\\ mg &= \pi d
+\gamma \nonumber\\ m &= \frac{\pi d \gamma}{g} \end{align} La tensión
+superficial de una gota de agua en contacto con vapor de agua puro
+\cite{water_tension2} se determina a partir de la ecuación
+\ref{eq:water_tension} donde $T$ es la temperatura en grados kelvin.
+\begin{equation}\label{eq:water_tension} \gamma_w = 235.8\left(
+    1-\frac{T}{697.098} \right)^{1.256} \left[ 1- 0.625\left(
+1-\frac{T}{697.098} \right)\right] \frac{\rm mN}{\rm m} \end{equation} Aunque
+la ecuación \ref{eq:water_tension} no sea aplicable a nuestro experimento
+puesto que solo es válida para agua pura en contacto con vapor de agua pura,
+ilustra como la tensión superficial depende de la temperatura. Para controlar
+la temperatura e intentar garantizar que la tensión superficial y por
+consiguiente el volumen de cada gota lanzada sea constante, los experimentos se
+realizaron en un entorno cerrado y se controlaron los cambios de temperatura
+con un termómetro (La temperatura se mantuvo oscilando entre los $26.7$ y
+$26.8$ grados centígrados durante los experimentos). Se usó siempre la misma
+solución de agua destilada con colorante para no alterar las propiedades del
+líquido así como el mismo tipo de papel.
+
+\section{Diseño experimental 2} \label{sec:Diseño experimental 2}
+\subsection{Objetivo} \label{sub:objetivo2} El objetivo del segundo experimento
+es determinar la relación entre el angulo de inclinación de una superficie y la
+forma de la mancha generada por una gota que cae sobre esta.
+
+\subsection{Montaje} \label{sub:montaje2} El montaje del segundo experimento es
+idéntico al del primer experimento (sección \ref{sub:montaje}) con la
+diferencia de que se usó un soporte vertical para inclinar las láminas de papel
+diferentes grados. Para determinar la inclinación se usaron cálculos
+matemáticos para determinar a que altura se debía fijar el papel en el soporte
+vertical para que este tuviera la inclinación deseada, adicionalmente, se
+comprobaron los cálculos con un porta ángulos para verificar que la inclinación
+era la correcta. La figura \ref{fig:montaje2} Otra de las diferencias es que se
+usó un segundo soporte a parte del nivel usado en el experimento 1 que fue
+usado en conjunto con el nivel poniendo uno a cada lado de la lámina de papel y
+con una regla de $40\ cm$ se unieron para poder poner la pipeta Pasteur con su
+soporte en la regla justo encima de la hoja y moverla a la misma altura. Debido
+a la inclinación de la lámina se tuvo que calcular para cada hilera de gotas en
+la hoja a que altura se debía poner dicha regla para que la gota estuviera
+justo a $50\ cm$ de la lámina, que fue la altura usada para todas las medidas
+de este experimento.  \begin{figure}[htpb] \centering
+\includegraphics[width=0.8\linewidth,angle=90]{src/montaje2.jpg}
+\caption{Montaje experimental con lámina inclinada $75^o$ respecto la
+horizontal} \label{fig:montaje2} \end{figure}
+
+\subsection{Control de variables} \label{sub:control_de_variables2} La variable
+independiente en este caso es la inclinación del plano y la dependiente la
+forma de la mancha formada por la gota, que en este caso esta determinada por
+el área, el perímetro, el eje mayor y el eje menor. Al igual que el experimento
+anterior, la temperatura es una de las variables que se deben controlar ya que
+esta afecta al volumen de agua que habrá en cada gota que caiga de la pipeta de
+Pasteur. El experimento se realizó en las mismas condiciones que el anterior, y
+la temperatura en este caso varió entre los $25.3^o$ y los $25.6^o$ grados
+Celsius (El experimento se realizó unas horas después que el primero). La
+altura de la caída se mantuvo constante calculando trigonométricamente la
+altura desde la superficie donde se apoyaban los soportes para que la gota
+cayera siempre desde $50\ cm$ tal y como se ha mencionado en la sección
+\ref{sub:montaje2}.
+
+\pagebreak \section{Datos brutos} \label{sec:datos_brutos} Las imágenes
+obtenidas a partir de los experimentos fueron procesadas usando un programa
+especializado llamado ImageJ \cite{imagej}. Este programa permite importar
+imágenes como la que se muestra en la figura \ref{fig:80img} y definir la
+proporción entre pixels y centímetros de la imagen a partir de la regla que
+aparece en esta y aislar la forma de las gotas a partir de los diferentes
+canales\footnote{Se filtraron las formas usando los siguientes parámetros en el
+espacio de color HSL: Matiz[26-54], Saturación[6-255] y Luz[50-255]}.
+Obteniendo la imagen que se muestra en la figura \ref{fig:80proc}.  Una vez
+procesada la imagen tal como se muestra en la figura \ref{fig:80proc}, el
+programa permite ejecutar un algoritmo de cálculo que aisla las regiones
+contiguas de color negro, que en nuestra muestra corresponden a la forma de las
+gotas y calcular el área negra de cada región así como el perímetro (sin
+considerar los agujeros que pueden haber en el interior de la región) y
+calcular el eje mayor y menor de la elipse que mejor se adapte a la figura así
+como la inclinación de los ejes respecto a la horizontal de la imagen.
+
+Siguen los datos obtenidos por el programa así como las imágenes procesadas con
+la escala en la esquina inferior derecha.
+
+\begin{figure}[htpb] \centering
+\includegraphics[width=0.60\linewidth]{src/80.JPG} \caption{Imagen original de
+manchas lanzadas desde $80\ cm$} \label{fig:80img} \end{figure}
+\begin{figure}[htpb] \centering
+    \includegraphics[width=0.60\linewidth]{src/80.png} \caption{Imagen de la
+figura \ref{fig:80img} procesada} \label{fig:80proc} \end{figure}
+
+\include{tables}
+
+Las tablas \ref{tab:proc1} y \ref{tab:proc2} muestran
+respectivamente la media de los datos obtenidos en cada una de las diferentes
+alturas del primer experimento y la media de los datos para cada una de las
+inclinaciones del segundo experimento con sus valores de error
+correspondientes.
+
+El error corresponde a la suma del error de precisón del instrumento usado y el
+error aleatorio siguiendo la formula que se muestra en
+\ref{eq:error}\footnote{El error de precisión del área es el mismo que el del
+perímetro ya que el programa calcula el área contando píxeles y por lo tanto no
+se propaga.}: 
+\begin{equation}
+\label{eq:error}
+E_{total}=
+\sqrt{
+E_\text{precisón}^2
++E_\text{aleatorio}^2
+} 
+\end{equation} 
+\begin{align}
+    E_\text{precisión}&=0.1\ 
+    \text{cm} 
+    \qquad 
+    \text{(Error de la regla usada en las
+imágenes)} \\ 
+    E_\text{aleatorio} &= \frac{1}{N}*
+    \sum_{i=1}^N
+    \sqrt{
+    \left(v_i -
+\overline{v}
+\right)^2} 
+\qquad 
+\text{
+(Desviación 
+estándar)
+} 
+\end{align}
+
+
+\begin{table}[H] \centering \caption{Datos obtenidos en el experimento 1}
+    \label{tab:proc1} \begin{tabular}{cccccc} \toprule Altura ($cm$) & Área
+        ($cm^2$) & Perímetro ($cm$) & Eje mayor ($cm$) & Eje menor ($cm$) \\
+        \midrule $10\pm0.1$  &   1.6 $\pm$ 0.3 &   7.1 $\pm$ 1.2 &   1.5 $\pm$
+        0.2 & 1.4 $\pm$ 0.2 \\ $20\pm0.1$  &   2.3 $\pm$ 0.4 &   7.5 $\pm$ 0.9
+            &   1.7 $\pm$ 0.2 & 1.7 $\pm$ 0.2 \\ $30\pm0.1$  &   3.1 $\pm$ 0.5
+            &   9.2 $\pm$ 1.0 &   2.0 $\pm$ 0.2 & 1.9 $\pm$ 0.2 \\ $40\pm0.1$
+            &   3.4 $\pm$ 0.4 &   12.1    $\pm$ 1.7 &   2.1 $\pm$ 0.2 &   2.0
+        $\pm$ 0.2 \\ $50\pm0.1$  &   3.5 $\pm$ 0.4 &   11.5    $\pm$ 1.3 &
+        2.2 $\pm$ 0.2 &   2.0 $\pm$ 0.1 \\ $60\pm0.1$  &   3.7 $\pm$ 0.4 &
+        12.2    $\pm$ 1.2 &   2.2 $\pm$ 0.2 &   2.1 $\pm$ 0.2 \\ $70\pm0.1$  &
+        3.8 $\pm$ 0.6 &   13.6    $\pm$ 1.8 &   2.3 $\pm$ 0.2 &   2.1 $\pm$ 0.2
+        \\ $80\pm0.1$  &   4.1 $\pm$ 0.3 &   14.7    $\pm$ 1.6 &   2.4 $\pm$
+        0.1 &   2.2 $\pm$ 0.1 \\ $90\pm0.1$  &   4.3 $\pm$ 0.4 &   15.6
+        $\pm$ 2.0 &   2.4 $\pm$ 0.1 &   2.3 $\pm$ 0.1 \\ $100\pm 0.1$ &   4.7
+        $\pm$ 0.7 &   17.7    $\pm$ 1.8 &   2.6 $\pm$ 0.2 &   2.3 $\pm$ 0.2 \\
+    \bottomrule \end{tabular} \end{table}
+
+\begin{table}[H] \centering \caption{Datos obtenidos en el experimento 2}
+    \label{tab:proc2} \begin{tabular}{cccccc} \toprule Altura ($cm$) & Área
+        ($cm^2$) & Perímetro ($cm$) & Eje mayor ($cm$) & Eje menor ($cm$) \\
+        \midrule 15	$\pm0.1$ &	4.0	$\pm$	0.7	&	9.80	$\pm$	1.05	&
+        2.34	$\pm$	0.24	&	2.17	$\pm$	0.22	\\ 30	$\pm0.1$ &
+        4.5	$\pm$	0.6	&	12.43	$\pm$	1.07	&	2.59	$\pm$	0.23
+                      &	2.19	$\pm$	0.18	\\ 45	$\pm0.1$ &	5.4	$\pm$
+        0.6	&	14.45	$\pm$	1.67	&	3.28	$\pm$	0.20	&	2.09
+        $\pm$	0.19	\\ 60	$\pm0.1$ &	6.0	$\pm$	1.2	&	18.57	$\pm$
+        2.88	&	5.85	$\pm$	1.10	&	1.32	$\pm$	0.22	\\ 75
+    $\pm0.1$ &	5.5	$\pm$	1.5	&	25.51	$\pm$	6.22	&	9.68	$\pm$
+2.28	&	0.72	$\pm$	0.14	\\ \bottomrule \end{tabular} \end{table}
+
+
+
+\pagebreak \section{Análisis de datos} \label{sec:analisis_de_datos}
+
+
+\begin{figure}[H] \centering
+\includegraphics[width=0.9\linewidth]{src/area_vs_height.png} \caption{Área vs.
+Altura} \label{fig:area_altura} \end{figure}
+
+\begin{figure}[H] \centering
+\includegraphics[width=0.9\linewidth]{src/perimeter_vs_height.png}
+\caption{Perímetro vs. Altura} \label{fig:perimetro_altura} \end{figure}
+
+La figura \ref{fig:area_altura} muestra la correlación entre el área y la
+altura desde que se lanzó la gota. Esta relación tiene un comportamiento lineal
+descrito por la función \ref{eq:fit_a_h}: \begin{align}\label{eq:fit_a_h} A(h)
+    &= a*h + b \\ a &= 0.02939 \pm 0.00743 \nonumber \\ b &= 1.826 \pm 0.461
+\nonumber \end{align}
+
+La figura \ref{fig:perimetro_altura} muestra la correlación entre el perímetro
+y la altura desde que se lanzó la gota. Esta relación tiene un comportamiento
+lineal descrito por la función \ref{eq:fit_p_h}:
+\begin{align}\label{eq:fit_p_h} P(h) &= a*h + b \\ a &= 0.1118 \pm 0.0181
+\nonumber \\ b &= 5.984 \pm 1.125 \nonumber \end{align}
+
+\subsection{Observaciones}
+
+Podemos observar que la pendiente de la función que modeliza el área es menor a
+la del perímetro, por consiguiente, el perímetro aumenta mucho más rápido que
+el área en relación a la altura, debido a los "picos" que se forman al caer de
+mayor altura. 
+
+
+
+\begin{figure}[H] \centering
+\includegraphics[width=0.9\linewidth]{src/ejes_vsheight.png}
+\caption{Proporción eje mayor - eje menor respecto a la inclinación del plano
+de impacto} \label{fig:ejes_inclinacion} \end{figure}
+
+
+
+\section{Evaluación de los resultados} \label{sec:evaluacion}
+
+
+
+
+
+
+
+\section{Conclusión} \label{sec:conclusion}
+
+
+\pagebreak \printbibliography[heading=bibintoc,title={Bibliografía}]
+
+\end{document}
